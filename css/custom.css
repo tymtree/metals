@@ -1,0 +1,306 @@
+
+.cardcontainer {
+  position: relative;
+  margin-left: 30px;
+  width: auto;
+}
+
+.cardcontainer .card{
+/*  float: left;*/
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cardcontainer .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fdce63;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.cardcontainer .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.cardcontainer .card:after{
+  content: 'Ranks';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255,255,25,0.05)
+}
+
+.cardcontainer .card .imgBx{
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.cardcontainer .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.cardcontainer .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.cardcontainer .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.cardcontainer .card:hover .contentBx{
+  height: 210px;
+}
+
+.cardcontainer .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.cardcontainer .card .contentBx .size, .cardcontainer .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cardcontainer .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.cardcontainer .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.cardcontainer .card .contentBx .size h3, .cardcontainer .card .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.cardcontainer .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardcontainer .card .contentBx .size span:hover{
+  background: #9bdc28;
+}
+
+.cardcontainer .card .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.cardcontainer .card .contentBx .color span:nth-child(2){
+  background: #9bdc28;
+}
+
+.cardcontainer .card .contentBx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.cardcontainer .card .contentBx .color span:nth-child(4){
+  background: #e91e63;
+}
+
+.cardcontainer .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 50px;*/
+}
+
+.cardcontainer .card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+
+
+/*Memership cards*/
+
+
+.membercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: auto;
+  margin: 40px 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.membercontainer .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+  background-color: #6e6666;
+}
+
+ .membercontainer .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+ .membercontainer .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+ .membercontainer .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+ .membercontainer .card .box:hover {
+  transform: translateY(-50px);
+}
+
+ .membercontainer .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+ .membercontainer .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+ .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+ .membercontainer .card .box .content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+ .membercontainer .card .box .content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+ .membercontainer .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  font-size: 15px;
+}
+ .membercontainer .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+
+/*Getting Started*/
+.membercontainer h1 {
+  font-size: 2.0rem;
+  color: #fff !important;
+  font-weight: 500; 
+}
