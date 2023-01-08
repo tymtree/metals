@@ -254,7 +254,7 @@
   text-align: center;
 }
 
- .container .card .box .content h2 {
+ .membercontainer .card .box .content h2 {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -304,3 +304,71 @@
   color: #fff !important;
   font-weight: 500; 
 }
+
+/*Opportunity*/
+.opportunity {
+  display: block;
+  width: 96%;
+  max-width: 90%;
+  margin: 30px auto; 
+  text-align: center;
+}
+
+.opportunity .box {
+  width: 96%;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 30px;
+  padding: 50px 15px;
+  background-color: #fab53dd6;
+  color: grey;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.box-dark {
+  width: 96%;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 30px;
+  padding: 50px 15px;
+  background-color: #000;
+  color: grey;
+  vertical-align: middle;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.box h2{
+  text-align: center;
+  padding: 30px, 30px;
+  font-weight: 700;
+  color: #000;
+  font-size:  3rem;
+  margin-bottom: 1rem;
+}
+
+.box-dark h2{
+  text-align: center;
+  padding: 30px, 30px;
+  font-weight: 700;
+  color: #fff;
+  font-size:  3rem;
+  margin-bottom: 1rem;
+}
+
+ .content{
+  margin-top: 20px;
+  font-size: 2rem;
+/*  line-height: 4rem;*/
+} 
+.content p{
+  line-height: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: justify;
+}
+.negative-spread-distance-box-shadow {
+  box-shadow: 0 10px 10px -5px;
+
+}
+
